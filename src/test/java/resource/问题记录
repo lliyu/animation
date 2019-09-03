@@ -1,0 +1,2 @@
+1。从配置文件中读取list数据时会出现expected single matching bean but found 2的错误，暂时使用注解@Primary解决 ---com.project.animation.po.OnlineSiteRegexList
+

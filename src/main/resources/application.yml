@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/animation?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+#animation:
+#  regexes[0]:
+#    type: bilibili
+#    name: <div class="headline">.*?<a.*?title="(.*?)"
+#    img: \"media_id\".*?\"cover\":\"(.*?)\"
+#    url: \"media_id\":(.*?),
+#    perfix: https://bilibili.com/bangumi/media/md{0}
